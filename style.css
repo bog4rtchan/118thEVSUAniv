@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Reset Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('homepage4.jpg') no-repeat center center fixed;  
+  background-size: cover; /* Makes sure the image covers the entire viewport */
+  text-align: center;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  overflow-y: scroll; /* Keeps vertical scrolling enabled */
+  -ms-overflow-style: none; /* Hides scrollbar in IE/Edge */
+}
+
+.nav-container {
+  background-color: #4b0000; /* Dark Maroon */
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Push items to the sides */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-logo img {
+  height: 75px; /* Adjust as needed */
+  width: auto;
+  padding-right: 100px;
+}
+/* Logo & Text */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Moves the logo to the left */
+  text-align: left;
+  width: 100%;
+}
+
+.logo-container img {
+  width: 350px; /* Adjust logo size */
+  height: auto;
+  margin-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 85px;
+}
+
+.logo-container h1 {
+  font-family: 'Allison', cursive; /* Apply Allison font */
+  font-size: 100px; /* Adjust size */
+  font-weight: normal; /* Allison looks better without bold */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  color: white;
+  margin: 0;
+  position: relative;
+  display: inline-block; /* Ensures the line is only as wide as the text */
+  padding-bottom: 0px; /* Adds space between text and the line */
+  border-bottom: 8px solid yellow; /* Creates the yellow line */
+}
+
+/* Navigation Bar */
+nav {
+  margin-left: left; /* Pushes the nav to the right */
+  padding-left: 30px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600; /* Semi-bold */
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+#home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative; /* Ensures overlay is positioned correctly */
+  background: url('homepage1.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(128, 0, 0, 0.726); /* Semi-transparent maroon overlay */
+  z-index: 1;
+}
+
+#home * {
+  position: relative; /* Ensures content appears above the overlay */
+  z-index: 2;
+}
+
+/* About Section */
+#contact {
+  padding: 60px;
+  background: white;
+  margin: 50px auto;
+  max-width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+#contact h2 {
+  font-size: 32px;
+  color: #d10000;
+}
+
+#contact p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#welcome-message {
+  position: relative;
+  height: 100vh; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: left;
+  padding-right: 2%;
+  background-image: url('welcome\ page\ photo1.png'); /* Replace with your image path */
+  background-size: contain; /* Ensures the image is fully visible */
+  background-position: left center; /* Positions the image on the left */
+  background-repeat: no-repeat; /* Prevents repeating */
+  background-size: 50%;
+}
+.welcome-content {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 400; /* Regular weight */
+  color: black;
+  max-width: 50%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Light background for better readability */
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+#about {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 50px;
+  background: url('2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(128, 0, 0, 0.726); /* Transparent maroon overlay */
+  z-index: 1; /* Keeps it behind the content */
+}
+
+
+.right-content {
+  flex: 1;
+  text-align: right;
+  padding-right: 250px;
+}
+
+.date-text {
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  font-size: 80px;  /* Adjust the size here */
+  font-weight: bold;
+  color: white;
+  margin: 0;  /* Removes any default margin */
+}
+
+.left-content,
+.right-content {
+  position: relative;
+  z-index: 2; /* Places content above the overlay */}
+
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* More space between links */
+    margin-top: 30px;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* More space between the icon and text */
+    text-decoration: none;
+    font-size: 22px; /* Bigger text */
+    color: white;
+    background: rgba(128, 0, 0, 0.8); /* Maroon background */
+    padding: 18px 24px; /* Bigger clickable area */
+    border-radius: 12px;
+    transition: 0.3s;
+  }
+  
+  .social-link:hover {
+    background: rgba(128, 0, 0, 1); /* Darker maroon on hover */
+  }
+  
+  .social-icon {
+    width: 40px; /* Bigger icon */
+    height: 40px;
+  }
+  
+  
